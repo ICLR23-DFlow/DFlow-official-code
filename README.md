@@ -1,6 +1,6 @@
 # [ICLR 2023] DFlow: Learning to Synthesize Better Optical Flow Datasets via a Differentiable Pipeline ([Paper](https://openreview.net/pdf?id=5O2uzDusEN5))
 
-<h4 align="center">Kwon Byung-Ki<sup>1</sup>, Nam Hyeon-Woo<sup>1</sup>, Ji-Yun Kim<sup>1</sup>, Tae-Hyun Oh<sup>1,2,3</sup>, Haoqiang Fan<sup>2</sup>, Guiming Luo<sup>1</sup>, Shuaicheng Liu<sup>3,2*</sup></center>
+<h4 align="center">Kwon Byung-Ki<sup>1</sup>, Nam Hyeon-Woo<sup>1</sup>, Ji-Yun Kim<sup>1</sup>, Tae-Hyun Oh<sup>1,2,3</sup></center>
 <h4 align="center">1. Department of Electrical Engineering, POSTECH , 2. Graduate School of AI, POSTECH</center>
 <h4 align="center">3. Institute for Convergence Research and Education in Advanced Technology, Yonsei University</center>
 
