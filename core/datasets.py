@@ -117,7 +117,7 @@ class FlowDataset(data.Dataset):
         
 
 class MpiSintel(FlowDataset):
-    def __init__(self, aug_params=None, split='training', root='/local_data/kwon/optical_flow_data/Sintel', dstype='clean'):
+    def __init__(self, aug_params=None, split='training', root='./dataset/Sintel', dstype='clean'):
         super(MpiSintel, self).__init__(aug_params)
         flow_root = osp.join(root, split, 'flow')
         image_root = osp.join(root, split, dstype)
@@ -136,7 +136,7 @@ class MpiSintel(FlowDataset):
 
 
 class FlyingChairs(FlowDataset):
-    def __init__(self, aug_params=None, split='train', root='/local_data/kwon/optical_flow_data/FlyingChairs_release/data'):
+    def __init__(self, aug_params=None, split='train', root='./dataset/FlyingChairs_release/data'):
         super(FlyingChairs, self).__init__(aug_params)
 
         images = sorted(glob(osp.join(root, '*.ppm')))
@@ -152,7 +152,7 @@ class FlyingChairs(FlowDataset):
 
 
 class FlyingThings3D(FlowDataset):
-    def __init__(self, aug_params=None, root='/local_data/kwon/optical_flow_data/FlyingThings3D_release', dstype='frames_cleanpass'):
+    def __init__(self, aug_params=None, root='./dataset/FlyingThings3D_release', dstype='frames_cleanpass'):
         super(FlyingThings3D, self).__init__(aug_params)
 
         for cam in ['left']:
@@ -176,7 +176,7 @@ class FlyingThings3D(FlowDataset):
       
 
 class KITTI(FlowDataset):
-    def __init__(self, aug_params=None, split='training', root='/local_data/kwon/optical_flow_data/KITTI15'):
+    def __init__(self, aug_params=None, split='training', root='./dataset/KITTI15'):
         super(KITTI, self).__init__(aug_params, sparse=True)
         if split == 'testing':
             self.is_test = True
@@ -195,7 +195,7 @@ class KITTI(FlowDataset):
 
 
 class HD1K(FlowDataset):
-    def __init__(self, aug_params=None, root='/local_data/kwon/optical_flow_data/hd1k'):
+    def __init__(self, aug_params=None, root='./dataset/hd1k'):
         super(HD1K, self).__init__(aug_params, sparse=True)
 
         seq_ix = 0
@@ -217,7 +217,8 @@ class DFlow(FlowDataset):
     def __init__(self, aug_params=None, no_aug=True):
         super(DFlow, self).__init__(aug_params)
 
-        root = "/local_data/kwon/DFlow/DFlow_target_sintel_15k"
+        root = "./dataset/DFlow_target_sintel"
+
         image1s = sorted(glob(osp.join(root, '*_0.jpg')))
         image2s = sorted(glob(osp.join(root, '*_1.jpg')))
         outliers = sorted(glob(osp.join(root, '*_mask.jpg')))
