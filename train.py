@@ -18,7 +18,6 @@ from torch.utils.data import DataLoader
 from raft import RAFT
 import evaluate
 import datasets
-import kornia as K
 
 from torch.utils.tensorboard import SummaryWriter
 
