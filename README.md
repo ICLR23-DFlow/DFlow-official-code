@@ -21,7 +21,7 @@ You can download the our DFlow dataset and the pretrained model from the link be
 - Pretrained model (https://drive.google.com/drive/folders/1LLpxyGcgE9rUoWsZMdC07bdrV4QQBMEV?usp=sharing)
 
 ## Training from scratch
-Download the DFlow dataset and place it in the "dataset" folder. Then, enter the "bash train_standard.sh" command
+Download the DFlow dataset and place it in the "dataset" folder. Then, enter the "bash train_standard.sh" command.
 When training with the DFlow dataset, the data augmentation used during dataset creation is applied. Please refer to section B.1 in our paper for more details.
 
 ## Citation
